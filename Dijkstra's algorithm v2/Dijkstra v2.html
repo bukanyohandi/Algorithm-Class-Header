@@ -1,0 +1,85 @@
+<h2 id="dijkstra_v2-valuetype-">Dijkstra_v2<ValueType></h2>
+<p>An implemented Dijkstra&#39;s algorithm in the form of a class. This class is designed with the intention of simplicity for its user when constructing a Dijkstra&#39;s algorithm</p>
+<p>The class is recommended for C++11 or later.</p>
+<p><code>#include &quot;dijkstra_v2.hpp&quot;</code></p>
+<h3 id="constructor">Constructor</h3>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Complexity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dijkstra_v2()</td>
+<td>$O(1)$</td>
+<td>Initializes a new empty graph of size 0.</td>
+</tr>
+<tr>
+<td>Dijkstra_v2($n$)</td>
+<td>$O(1)$</td>
+<td>Initializes a new empty graph of size $n$.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="methods">Methods</h3>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Complexity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>addEdge($u$, $v$, $w$)</td>
+<td>$O(log(E))$</td>
+<td>Adds an edge between node $u$ and $v$ with a weight $w$.</td>
+</tr>
+<tr>
+<td>removeEdge($u$, $v$, $w$)</td>
+<td>$O(log(E))$</td>
+<td>Removes all edges between node $u$ and $v$ that have a weight $w$.</td>
+</tr>
+<tr>
+<td>distance($source$)</td>
+<td>$O(V + E log V)$</td>
+<td>Returns a vector of distances between the source and all nodes.</td>
+</tr>
+<tr>
+<td>getInfinite()</td>
+<td>$O(1)$</td>
+<td>Returns the infinite value.</td>
+</tr>
+<tr>
+<td>getZero()</td>
+<td>$O(1)$</td>
+<td>Returns the zero value.</td>
+</tr>
+<tr>
+<td>resize($n$)</td>
+<td>$O(1)$</td>
+<td>Resizes the current graph size to $n$.</td>
+</tr>
+<tr>
+<td>setInfinite($val$)</td>
+<td>$O(1)$</td>
+<td>Sets an infinite value.</td>
+</tr>
+<tr>
+<td>setZero($val$)</td>
+<td>$O(1)$</td>
+<td>Sets a zero value.</td>
+</tr>
+<tr>
+<td>size()</td>
+<td>$O(1)$</td>
+<td>Returns the number of nodes in class.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="details">Details</h3>
+<p>Please find the <code>demo.cpp</code> file for the example use.</p>
