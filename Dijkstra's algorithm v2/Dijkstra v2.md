@@ -19,7 +19,7 @@ The class is recommended for C++11 or later.
 | distance($source$)        | $O(V + E log V)$| Returns a vector of distances between the source and all nodes.   |
 | getInfinite()             | $O(1)$          | Returns the infinite value.                                       |
 | getZero()                 | $O(1)$          | Returns the zero value.                                           |
-| resize($n$)               | $O(1)$          | Resizes the current graph size to $n$.                            |
+| resize($n$)               | $O(n)$          | Resizes the current graph size to $n$.                            |
 | setInfinite($val$)        | $O(1)$          | Sets an infinite value.                                           |
 | setZero($val$)            | $O(1)$          | Sets a zero value.                                                |
 | size()                    | $O(1)$          | Returns the number of nodes in class.                             |
