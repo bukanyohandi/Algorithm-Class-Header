@@ -9,7 +9,7 @@ The class is recommended for C++11 or later.
 | Syntax        | Complexity | Description                               |
 | ------------- | ---------- | ----------------------------------------- |
 | Dijkstra()    | $O(1)$     | Initializes a new empty graph of size 0.  |
-| Dijkstra($n$) | $O(1)$     | Initializes a new empty graph of size $n$.|
+| Dijkstra($n$) | $O(n)$     | Initializes a new empty graph of size $n$.|
     
 ### Methods
 | Syntax                 | Complexity      | Description                                                    |
