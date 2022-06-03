@@ -14,8 +14,8 @@ The class is recommended for C++11 or later.
 ### Methods
 | Syntax                    | Complexity      | Description                                                       |
 | ------------------------- | --------------- | ----------------------------------------------------------------- |
-| addEdge($u$, $v$, $w$)    | $O(log(E))$     | Adds an edge between node $u$ and $v$ with a weight $w$.          |
-| removeEdge($u$, $v$, $w$) | $O(log(E))$     | Removes all edges between node $u$ and $v$ that have a weight $w$.|
+| addEdge($u$, $v$, $w$)    | $O(log E)$      | Adds an edge between node $u$ and $v$ with a weight $w$.          |
+| removeEdge($u$, $v$, $w$) | $O(log E)$      | Removes all edges between node $u$ and $v$ that have a weight $w$.|
 | distance($source$)        | $O(V + E log V)$| Returns a vector of distances between the source and all nodes.   |
 | getInfinite()             | $O(1)$          | Returns the infinite value.                                       |
 | getZero()                 | $O(1)$          | Returns the zero value.                                           |
