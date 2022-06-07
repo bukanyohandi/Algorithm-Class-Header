@@ -1,0 +1,80 @@
+<h2 id="dsu-valuetype-">DSU<ValueType></h2>
+<p>An implemented Disjoint-set data structure in the form of a class. This class is designed with the intention of simplicity for its user when constructing the data structure.</p>
+<p>The class is recommended for C++11 or later.</p>
+<p><code>#include &quot;dsu.hpp&quot;</code></p>
+<h3 id="constructor">Constructor</h3>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Complexity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DSU()</td>
+<td>$O(1)$</td>
+<td>Initializes a new disjoint-set data structure of size 0.</td>
+</tr>
+<tr>
+<td>DSU($n$)</td>
+<td>$O(n)$</td>
+<td>Initializes a new disjoint-set data structure of size $n$.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="methods">Methods</h3>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Complexity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>connectedNodes($x$)</td>
+<td>$O(n)$</td>
+<td>Returns a vector of nodes that are connected to node $x$ (excluding the node $x$ itself).</td>
+</tr>
+<tr>
+<td>find($x$)</td>
+<td>$O(log n)$</td>
+<td>Returns the representation of the group where node $x$ belongs.</td>
+</tr>
+<tr>
+<td>isConnected($u$, $v$)</td>
+<td>$O(log n)$</td>
+<td>Returns a boolean value indicating the connectivity between node $u$ and $v$.</td>
+</tr>
+<tr>
+<td>merge($u$, $v$)</td>
+<td>$O(log n)$</td>
+<td>Merges groups where node $u$ and $v$ respectively belong and returns the representation.</td>
+</tr>
+<tr>
+<td>resize($n$)</td>
+<td>$O(n)$</td>
+<td>Resizes the current data structure size to $n$ ($n$ should be larger than the current size).</td>
+</tr>
+<tr>
+<td>setParent($u$, $v$)</td>
+<td>$O(1)$</td>
+<td>Sets node $u$ as the parent of node $v$.</td>
+</tr>
+<tr>
+<td>size()</td>
+<td>$O(1)$</td>
+<td>Returns the size of the data structure.</td>
+</tr>
+<tr>
+<td>size($x$)</td>
+<td>$O(log n)$</td>
+<td>Returns the number of nodes that are connected to node $x$ (including the node $x$ itself).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="details">Details</h3>
+<p>Please find the <code>demo.cpp</code> and <code>demo2.cpp</code> files for the example use.</p>
