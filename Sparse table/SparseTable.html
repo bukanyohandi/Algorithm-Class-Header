@@ -1,0 +1,40 @@
+<h2 id="sparsetable-valuetype-func-">SparseTable<ValueType, func></h2>
+<p>An implemented sparse table data structure in the form of a class. This class is designed with the intention of simplicity for its user when constructing the data structure.</p>
+<p>The class is recommended for C++11 or later.</p>
+<p><code>#include &quot;sparse_table.hpp&quot;</code></p>
+<h3 id="constructor">Constructor</h3>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Complexity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SparseTable($v$)</td>
+<td>$O(n log n)$</td>
+<td>Initializes a new sparse table data structure from the given vector v.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="methods">Methods</h3>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Complexity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>query($left$, $right$)</td>
+<td>$O(1)$</td>
+<td>Returns func($v<em>{left}$, $v</em>{left + 1}$, ..., $v_{right - 1}$)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="details">Details</h3>
+<p>Please find the <code>demo.cpp</code> file for the example use.</p>
